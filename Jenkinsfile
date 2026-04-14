@@ -19,13 +19,13 @@ pipeline {
             }
         }
 
-        stage('Restore') {
-            steps {
-                container('dotnet') {
-                    sh 'dotnet restore'
-                }
-            }
-        }
+        // stage('Restore') {
+        //     steps {
+        //         container('dotnet') {
+        //             sh 'dotnet restore'
+        //         }
+        //     }
+        // }
 
         stage('Build') {
             steps {
